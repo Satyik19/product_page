@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Product Details</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="image-section">
+                <img id="big" src="" alt="Product" class="big-image">
+                <div id="smalls" class="product-details-image">
+                    <img src="" alt="Product Details" class="small-image">
+                    <img src="" alt="Product Details" class="small-image">
+                    <img src="" alt="Product Details" class="small-image">
+                </div>
+            </div>
+            <div class="product-details-section">
+                <span id="vendor" class="company">Marmeto</span>
+                <h2 id="title" class="product-name">Embrace Sideboard</h2>
+                <div class="product-amount">
+                    <p class="amount" id="price">$122222<span class="discount">35% off</span></p>
+                    <p class="compare" id="comp">$199999.0</p>
+                </div>
+                <div class="choose-color">
+                    <h3>Choose a color</h3>
+                    <div id="color">
+                        <span class="color active-color"></span>
+                        <span class="color"></span>
+                        <span class="color"></span>
+                    </div>
+                </div>
+                <div class="choose-size">
+                    <h3>Choose a size</h3>
+                    <div id="size">
+                        <label>
+                            <input class="size-input" type="checkbox">
+                            Small
+                        </label>
+                        <label>
+                            <input class="size-input" type="checkbox">
+                            Medium
+                        </label>
+                        <label>
+                            <input class="size-input" type="checkbox">
+                            Large
+                        </label>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <div class="how-many">
+                        <button id="minus-cart">
+                            <svg baseProfile="tiny" height="18px" width="18px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M18,11H6c-1.104,0-2,0.896-2,2s0.896,2,2,2h12c1.104,0,2-0.896,2-2S19.104,11,18,11z"/></svg>
+                          </button>
+                        <span id="noOfItem">1</span>
+                        <button id="plus-cart">
+                            <svg height="18px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28,14H18V4c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2  s2-0.896,2-2V18h10c1.104,0,2-0.896,2-2S29.104,14,28,14z"/></svg>                              
+                        </button>
+                    </div>
+                    <button class="cart-btn">
+                        <svg fill="none" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.7813 8.1875V4.25C12.7813 3.37976 12.4356 2.54516 11.8203 1.92981C11.2049 1.31445 10.3703 0.96875 9.50008 0.96875C8.62984 0.96875 7.79524 1.31445 7.17988 1.92981C6.56453 2.54516 6.21883 3.37976 6.21883 4.25V8.1875M16.1553 6.44362L17.2605 16.9436C17.3217 17.5255 16.8667 18.0312 16.2813 18.0312H2.71883C2.58076 18.0314 2.44421 18.0025 2.31803 17.9464C2.19186 17.8904 2.0789 17.8084 1.98647 17.7058C1.89405 17.6032 1.82424 17.4824 1.78158 17.3511C1.73891 17.2197 1.72435 17.0809 1.73883 16.9436L2.84483 6.44362C2.87034 6.20174 2.9845 5.97786 3.1653 5.81516C3.34609 5.65246 3.58073 5.56246 3.82395 5.5625H15.1762C15.6802 5.5625 16.1028 5.94312 16.1553 6.44362ZM6.54695 8.1875C6.54695 8.27452 6.51238 8.35798 6.45085 8.41952C6.38931 8.48106 6.30585 8.51562 6.21883 8.51562C6.1318 8.51562 6.04834 8.48106 5.98681 8.41952C5.92527 8.35798 5.8907 8.27452 5.8907 8.1875C5.8907 8.10048 5.92527 8.01702 5.98681 7.95548C6.04834 7.89394 6.1318 7.85938 6.21883 7.85938C6.30585 7.85938 6.38931 7.89394 6.45085 7.95548C6.51238 8.01702 6.54695 8.10048 6.54695 8.1875ZM13.1095 8.1875C13.1095 8.27452 13.0749 8.35798 13.0133 8.41952C12.9518 8.48106 12.8684 8.51562 12.7813 8.51562C12.6943 8.51562 12.6108 8.48106 12.5493 8.41952C12.4878 8.35798 12.4532 8.27452 12.4532 8.1875C12.4532 8.10048 12.4878 8.01702 12.5493 7.95548C12.6108 7.89394 12.6943 7.85938 12.7813 7.85938C12.8684 7.85938 12.9518 7.89394 13.0133 7.95548C13.0749 8.01702 13.1095 8.10048 13.1095 8.1875Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            
+                        Add To Cart
+                    </button>
+                </div>
+                <p id="desc" class="product-info">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
